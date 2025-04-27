@@ -22,7 +22,9 @@ or the Mono version (recommended):
 
 ## Dependencies
 
-The formula specifies `mono` as a dependency and will install it via homebrew during installation if it isn’t found. If you have an existing non-homebrew install of `mono`, you can use `--without-mono` with the install command to skip installing it.
+The `omnisharp` formula specifies `dotnet` as a dependency and will install it via homebrew during installation if it isn’t found. If you have an existing non-homebrew install of `dotnet` (or `dotnet-sdk` tap), you can use `--without-dotnet` with the install command to skip installing it. Please make sure `DOTNET_ROOT` environment variable is defined properly.
+
+The `omnisharp-mono` formula specifies `mono` as a dependency and will install it via homebrew during installation if it isn’t found. If you have an existing non-homebrew install of `mono`, you can use `--without-mono` with the install command to skip installing it.
 
 ## Upgrading
 
